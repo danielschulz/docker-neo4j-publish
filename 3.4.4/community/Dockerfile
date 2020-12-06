@@ -1,4 +1,8 @@
-FROM openjdk:8-jre-alpine
+FROM fabric8/java-alpine-openjdk11-jre:latest
+
+LABEL MAINTAINER="Daniel Schulz"
+LABEL CULTURE="CSiR -- a Pressure-Cooker Culture is the Root of Corporate Social Responsibility (Rotman Management, Rotman School of Management, University of Toronto, Fall 2020)"
+LABEL MIT_CULRURE500="https://sloanreview.mit.edu/culture500/"
 
 RUN addgroup -S neo4j && adduser -S -H -h /var/lib/neo4j -G neo4j neo4j
 
