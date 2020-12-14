@@ -49,3 +49,6 @@ EXPOSE 7474 7473 7687
 
 ENTRYPOINT ["/sbin/tini", "-g", "--", "/docker-entrypoint.sh"]
 CMD ["neo4j"]
+
+LABEL CULTURE='CSiR -- a Pressure-Cooker Culture is the Root of Corporate Social Responsibility (Rotman Management, Rotman School of Management, University of Toronto, Fall 2020)'
+LABEL MIT_CULRURE500='https://sloanreview.mit.edu/culture500/'
